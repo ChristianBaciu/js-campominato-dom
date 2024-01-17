@@ -1,7 +1,6 @@
 // const bottoneGeneraHtml = document.getElementById("bottoneGenera")
 // bottoneGeneraHtml.addEventListener('click', function(){
 
-
     function randomica(max){
         return Math.floor(Math.random()*max) + 1
     }
@@ -14,28 +13,45 @@
             arrayNumeriSingoli.push(randomNum)
         }
 
-    }while(arrayNumeriSingoli.length !== 100)
+    }while(arrayNumeriSingoli.length !== 86)
+    // console.log(arrayNumeriSingoli)
 
 
 
     
 
-    const grigliaHtml = document.getElementById ("griglia");
+    const grigliaHtml = document.getElementById ("griglia")
 
     for (let i = 0; i < 100; i++){
-        let box = document.createElement("div");
+        let box = document.createElement("div")
 
-        box.classList.add("box");
+        box.classList.add("box")
 
-        box.innerHTML = `<span>${arrayNumeriSingoli[i]}</span>`;
+        box.innerHTML = `<span>${arrayNumeriSingoli[i]}</span>`
 
         box.addEventListener('click', function(){
-            this.classList.toggle("active");
+            this.classList.toggle("active")
 
-            console.log(this)
+
+
+            
+            let specificoSpanHtml = this.querySelector( "span" ).innerText
+            if( specificoSpanHtml % 2 == 0) {
+                this.classList.toggle("green")
+            }else{
+                this.classList.toggle("red")
+            }
+    
+
+            // mette il numero cliccato nella console
+            console.log(specificoSpanHtml)
+
         })
 
-        grigliaHtml.append(box);
+
+
+        
+        grigliaHtml.append(box)
     }
 // })
 
@@ -45,8 +61,5 @@
 
 
 
-
-
-console.log(arrayNumeriSingoli)
 
 

@@ -81,6 +81,25 @@ main{
     background-color: lightblue;
 }
 
+/* con if else cambia colore dal verde a rosso */
+.green{
+    background-color: green;
+    /* pari */
+}
+
+.red{
+    background-color: red;
+    /* dispari */
+}
+
+.box.green span,
+.box.red span {
+    display: block;
+}
+
+
+
+
 footer{
     margin: 0 auto;
     width: 60%;
