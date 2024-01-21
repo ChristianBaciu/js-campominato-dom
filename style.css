@@ -67,38 +67,30 @@ main{
     justify-content: center;
 }
 
-/* Per nascondere i box non cliccati */
-/* .box span{
+/* 
+/Per nascondere i box non cliccati
+.box span{
     display: none;
-} */
-/* Per nascondere i box non cliccati */
-/* .box.active span{
-    display: block;
-} */
-
-/* al click del box cambia colore in js*/
-.active{
-    background-color: lightblue;
 }
 
-/* con if else cambia colore dal verde a rosso */
+Per nascondere i box non cliccati
+.box.active span{
+    display: block;
+}
+ */
+
 .green{
     background-color: green;
-    /* pari */
 }
 
 .red{
     background-color: red;
-    /* dispari */
 }
 
 .box.green span,
 .box.red span {
     display: block;
 }
-
-
-
 
 footer{
     margin: 0 auto;
